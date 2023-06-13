@@ -1,0 +1,10 @@
+<table border="1">
+    <tr>
+        <td>X</td><td>Y</td>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row.x }}</td><td>{{ row.y }}</td>
+    </tr>
+    {% endfor %}
+</table>
