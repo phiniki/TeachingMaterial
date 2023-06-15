@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 page_dr = {
     "LoopContent":{"name":"繰り返し表示", "html":"LoopContent.html"},
-    "ReadExcel_And_Show":{"name":"エクセル読み込み＆表示", "c":"ReadExcel_And_Show.html"},
+    "ReadExcel_And_Show":{"name":"エクセル読み込み＆表示", "html":"ReadExcel_And_Show.html"},
 }
 
 @app.route('/', methods = ["GET"])
