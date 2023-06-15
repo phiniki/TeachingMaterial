@@ -1,10 +1,3 @@
-<table border="1">
-    <tr>
-        <td>X</td><td>Y</td>
-    </tr>
-    {% for row in data %}
-    <tr>
-        <td>{{ row.x }}</td><td>{{ row.y }}</td>
-    </tr>
-    {% endfor %}
-</table>
+{% for key in page_dr.keys() %}
+<p><a href="{{ url_for('page', page=key)}}">{{ page_dr[key].name }}</a></p>
+{% endfor %}
